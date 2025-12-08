@@ -1,3 +1,73 @@
+/* *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+} */
 body{
-    background-color: skyblue;
+    background-color: #E6E6E6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container{
+    width: 600px;
+    height: 600px;;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin:0px auto;
+}
+
+#header{
+    background: #6943FF;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#heading{
+    margin:0;
+    text-align: center;
+    color: white;
+    padding:28px 0px;
+    font-size: 25px;
+}
+
+#input-unit{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #6943FF;
+    color: white;
+    font-weight: bold;
+    width: 90px;
+    padding:5px;
+    font-size: 60px;
+    text-align: center;
+    margin: 0px auto;
+}
+#convert-btn{
+    margin:25px auto;
+    border:none;
+    border-radius: 3px;
+    width: 105px;
+    background-color: white;
+    color:#6943FF;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+#units{
+    background-color: #F4F4F4;
+    margin:0px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    height: 350px;
+    color:#5A537B;
+}
+.parts{
+    background-color: #E6E6E6 ;
+    height: 90px;
+    width:500px;
+    margin: 20px auto 0px auto;
+    border-radius: 5px;
 }
