@@ -37,35 +37,32 @@ convertBtn.addEventListener("click", function () {
         return num1 / num2;
     }
 
-    let mtf = convertMtrToFt(userValue, 3.281)
+    let mtf = convertMtrToFt(userValue, 3.28084)
     console.log(mtf);
+    console.log(Math.floor(mtf * 1000) / 1000);
+    // console.log(mtf.toFixed(3));
     
-    console.log(Math.round(mtf * 1000) / 1000);
 
-    let ftm = convertFtToMtr(userValue, 3.281)
+    let ftm = convertFtToMtr(userValue, 3.28084)
     console.log(ftm);
-    
-    console.log(Math.round(ftm * 1000) / 1000);
-
-    let ltg = convertLtrToGal(userValue, 0.264)
+    console.log(Math.floor(ftm * 1000) / 1000);
+// =================================================================
+    let ltg = convertLtrToGal(userValue, 0.264172)
     console.log(ltg);
+    console.log(Math.floor(ltg * 1000) / 1000);
     
-    console.log(Math.round(ltg * 1000) / 1000);
-    
-    let gtl = convertGalToLtr(userValue, 0.264)
+    let gtl = convertGalToLtr(userValue, 0.264172)
     console.log(gtl);
-    
-    console.log(Math.round(gtl * 1000) / 1000);
-    
-    let ktp = convertKgsToPnd(userValue, 2.204)
+    console.log(Math.floor(gtl * 1000) / 1000);
+
+// ===================================================================
+    let ktp = convertKgsToPnd(userValue, 2.20462)
     console.log(ktp);
+    console.log(Math.floor(ktp * 1000) / 1000);
     
-    console.log(Math.round(ktp * 1000) / 1000);
-    
-    let ptk = convertPndToKgs(userValue, 2.204)
+    let ptk = convertPndToKgs(userValue, 2.20462)
     console.log(ptk);
-    
-    console.log(Math.round(ptk * 1000) / 1000);
+    console.log(Math.floor(ptk * 1000) / 1000);
     
 
     // volumeUnits.textContent = `${userValue} meters = 65.616 feet | ${userValue} feet = 6.096 meters`;
@@ -89,6 +86,9 @@ convertBtn.addEventListener("click", function () {
 1 liter =0.264gallon
 1 kilogram = 2.204 pound
 
+1 meter = 3.28084 feet
+1 liter = 0.264172 gallons
+1 kilogram = 2.20462 pounds
 4. display the new value back to p
 
 
