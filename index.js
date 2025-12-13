@@ -7,22 +7,29 @@ let massUnits = document.getElementById("mass-units")
 
 convertBtn.addEventListener("click", function () {
     const inputUnit = document.getElementById("input-unit").value;
+    let  userValue = 0;
     console.log(`input value is ${inputUnit} and is of ${typeof inputUnit}`);
 
     if (isNaN(inputUnit)) {
-        console.log("true, not a number");
+        alert("input value is not a number string");
     } else {
-        console.log("number string");
-        const userValue = Number(inputUnit)
-        console.log(`input value is ${userValue}`);
-        console.log(typeof userValue);
-
+        userValue = Number(inputUnit)
+        console.log(`input value is ${userValue} and is of ${typeof userValue}`);
     }
+    const mtf = 3.28084
+    const ltg = 0.264172
+    const ktp = 2.20462
 
+    console.log(userValue*mtf);
+    console.log(userValue/mtf);
 
+    console.log(userValue*ltg);
+    console.log(userValue/ltg);
 
-
-
+    console.log(userValue*ktp);
+    console.log(userValue/ktp);
+    
+    
     // lengthUnits.textContent = `${userValue}*${Number(3.281)} meters = ${userValue} feet | ${userValue} feet = 6.096 meters`;
     // volumeUnits.textContent = `${userValue} meters = 65.616 feet | ${userValue} feet = 6.096 meters`;
     // massUnits.textContent = `${userValue} meters = 65.616 feet | ${userValue} feet = 6.096 meters`;
